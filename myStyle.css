@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.btnNewGrid, .btnClearGrid {
+    border: 2px solid;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btnNewGrid:hover, .btnClearGrid:hover {
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
